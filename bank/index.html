@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Благотворительный банк Максим</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rubik:wght@400;700&display=swap');
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    background: radial-gradient(ellipse at bottom, #050505 0%, #000 100%);
+    overflow-x: hidden;
+  }
+
+  /* Звёздный фон */
+  .stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: blink 2s infinite ease-in-out;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+  }
+
+  header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 42px;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px #f0f, 0 0 40px #0ff, 0 0 60px #f0f;
+    font-weight: 700;
+    animation: neonPulse 3s infinite alternate;
+  }
+  @keyframes neonPulse {
+    from { text-shadow: 0 0 10px #0ff, 0 0 20px #f0f; }
+    to { text-shadow: 0 0 30px #0ff, 0 0 60px #f0f; }
+  }
+
+  .content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 25px #00f;
+  }
+
+  p {
+    font-size: 18px;
+    color: #cce;
+    line-height: 1.6;
+    text-shadow: 0 0 10px #00f;
+  }
+
+  .photo {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 25px;
+    box-shadow: 0 0 40px #0ff;
+    overflow: hidden;
+  }
+  .photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 50px;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    border-radius: 50px;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 30px #0ff;
+    transition: 0.3s;
+  }
+  .button:hover {
+    box-shadow: 0 0 60px #00f, 0 0 80px #0ff;
+    transform: scale(1.05);
+  }
+
+  /* Описание концепции */
+  .concept {
+    background: rgba(0, 0, 30, 0.6);
+    border: 1px solid rgba(0,255,255,0.2);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 60px;
+    text-align: left;
+    box-shadow: 0 0 40px rgba(0,255,255,0.1);
+  }
+  .concept h2 {
+    color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 15px;
+  }
+  .concept p {
+    font-size: 17px;
+    color: #ccc;
+    margin: 5px 0;
+  }
+
+  footer {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    margin: 40px 0 10px;
+  }
+
+  /* Адаптация под мобильные устройства */
+  @media (max-width: 600px) {
+    .logo {
+      font-size: 32px;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<header>
+  <div class="logo">Банк Максим</div>
+</header>
+
+<div class="content">
+  <h1>Благотворительный банк Максим</h1>
+  <p>Банк, где добро встречается с технологиями будущего. Мы соединяем сердца и цифры, создавая пространство, где каждый подарок имеет значение.</p>
+
+  <div class="photo">
+    <img src="ss/photo_2025-10-25_03-19-12.jpg" alt="Банк Максим">
+  </div>
+
+  <a class="button" href="https://t.me/cata_CVV" target="_blank">Попросить подарок</a>
+
+  <div class="concept">
+    <p><strong></strong> Благотворительный банк Максим💫</p>
+    <p><strong>Наш банк:</strong> Это место, где добро встречается с технологиями будущего. Здесь не про холодные транзакции — здесь каждый «подарок» это акт доверия, тепла и человечности в мире неона и цифр.</p>
+    <p><strong>Наш слоган:</strong> «Добро — валюта будущего»</p>
+  </div>
+</div>
+
+<footer>Россия, Тульская область, г. Новомосковск, ул. Московская, 28</footer>
+
+<script>
+  const starContainer = document.getElementById('stars');
+  for (let i = 0; i < 200; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = Math.random() * 100 + '%';
+    star.style.left = Math.random() * 100 + '%';
+    star.style.animationDelay = Math.random() * 5 + 's';
+    starContainer.appendChild(star);
+  }
+</script>
+
+</body>
+</html>
